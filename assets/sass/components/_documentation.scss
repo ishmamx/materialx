@@ -1,0 +1,33 @@
+.yoo-documentation-body {
+  font-size: 16px;
+}
+
+.yoo-doc-box {
+  border: 1px solid $base-color4;
+  border-radius: 10px;
+  padding: 15px 20px;
+  background-color: #fff;
+}
+
+.yoo-structure-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+
+    li {
+      display: block;
+      position: relative;
+
+      &:before {
+        content: '|--';
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+}

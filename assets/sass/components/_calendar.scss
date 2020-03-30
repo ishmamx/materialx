@@ -1,0 +1,348 @@
+/*========== Start Calendar  ==========*/
+#yoo-calendar {
+  a {
+    transition: none;
+  }
+
+  .fc-event,
+  .fc-event-dot {
+    background-color: $indigo-color;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+    margin: 0;
+    padding: 8px 20px;
+  }
+
+  .fc-time {
+    margin-top: 3px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .fc-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fc-day-grid-event .fc-time:before {
+    content: "at";
+    text-transform: lowercase;
+    margin-right: 2px;
+  }
+
+  .fc-day-grid-event .fc-time:after {
+    content: "m";
+  }
+
+  .fc-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  &.fc-unthemed {
+
+    .fc-content,
+    .fc-divider,
+    .fc-list-heading td,
+    .fc-list-view,
+    .fc-popover,
+    .fc-row,
+    tbody,
+    td,
+    th,
+    thead {
+      border-color: $base-color4;
+    }
+  }
+
+  .fc-day-top .fc-day-number {
+    float: initial;
+    font-size: 14px;
+    color: $base-color3;
+    display: inline-block;
+    padding: 15px 30px;
+  }
+
+  .fc-day-header span,
+  .fc-day-header a {
+    display: block;
+    padding: 16px 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $base-color3;
+  }
+
+  .fc-center h2 {
+    font-size: 16px;
+  }
+
+  .fc-toolbar.fc-header-toolbar {
+    display: flex;
+    justify-content: center;
+    padding: 17px 0;
+    position: relative;
+    margin-bottom: 0;
+    border-left: 1px solid $base-color4;
+    border-right: 1px solid $base-color4;
+  }
+
+  .fc-center h2 {
+    font-size: 16px;
+  }
+
+  .fc-toolbar {
+    .fc-left {
+      float: left;
+      position: absolute;
+      right: 20px;
+      width: 126px;
+      border: 1px solid $base-color4;
+      border-radius: 4px;
+      top: 11px;
+      height: 30px;
+
+      .fc-button-group {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+
+        .fc-button {
+          position: absolute;
+          top: 0;
+          padding: 0;
+          width: 28px;
+          background: transparent;
+          border: none;
+          height: 28px;
+          line-height: 28px;
+          box-shadow: none;
+          transition: all 0.3s ease;
+
+          .fc-icon {
+            font-size: 10px;
+            color: $base-color3;
+            top: -2px;
+          }
+
+          &:hover {
+            background-color: $base-color5;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .fc-prev-button {
+          left: 0;
+        }
+
+        .fc-next-button {
+          right: 0;
+        }
+      }
+
+      .fc-today-button {
+        position: absolute;
+        left: 28px;
+        margin-left: 0;
+        width: 68px;
+        border: none;
+        border-left: 1px solid $base-color4;
+        border-right: 1px solid $base-color4;
+        border-radius: 0;
+        background: transparent;
+        color: $base-color2;
+        font-weight: 400;
+        font-size: 14px;
+        height: 28px;
+        line-height: 28px;
+        box-shadow: none;
+
+        &:hover {
+          background-color: $base-color5;
+        }
+      }
+    }
+
+    .fc-right {
+      position: absolute;
+      left: 20px;
+      top: 0px;
+
+      .fc-button-group {
+        .fc-button {
+          background: $main-color;
+          line-height: 1.6em;
+          padding: 0 20px;
+          height: 53px;
+          width: initial;
+          border: none;
+          margin: 0;
+          font-size: 14px;
+          text-transform: uppercase;
+          border-right: none;
+          box-shadow: none;
+          color: $base-color2;
+          text-shadow: none;
+          font-weight: 500;
+          font-family: inherit;
+          position: relative;
+          transition: all 0.3s ease;
+
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 0%;
+            background-color: $indigo-color;
+            transition: all 0.3s ease;
+
+          }
+
+          &.fc-state-active {
+            background-color: transparent;
+            color: $indigo-color;
+
+            &:before {
+              width: 100%;
+            }
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &:first-child {
+            border-left: none;
+          }
+
+          &:hover {
+            background-color: rgba($indigo-color, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  .fc-more {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 11px 30px;
+    display: block;
+    background-color: $base-color3;
+  }
+
+  &.fc-unthemed .fc-popover {
+    border: 1px solid $base-color4;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: $main-color;
+  }
+
+  &.fc-unthemed .fc-popover .fc-header {
+    background: $base-color4;
+    padding: 12px 15px;
+    border-bottom: 1px solid $base-color4;
+  }
+
+  .fc-header.fc-widget-header .fc-title {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .fc-more-popover .fc-event-container {
+    padding: 0;
+  }
+
+  .fc-row.fc-rigid .fc-content-skeleton tbody tr:nth-child(even) .fc-event-container .fc-event,
+  .fc-event-container .fc-event:nth-child(even) {
+    background-color: $green-color;
+  }
+
+}
+
+#yoo-calendar.fc-unthemed .fc-content-skeleton td {
+  border: none;
+}
+
+.fc-highlight {
+  background: $base-color5;
+  opacity: 1;
+}
+
+.fc-highlight-skeleton {
+  td {
+    border: none !important;
+  }
+}
+
+.fc-unthemed td.fc-today {
+  background-color: $base-color5;
+}
+
+#yoo-calendar.fc-unthemed .fc-popover.fc-more-popover {
+  width: 225px;
+}
+
+.yoo-card.yoo-style1.yoo-calendar-card {
+  overflow: hidden;
+
+  .yoo-card-heading {
+    border: 1px solid $base-color4;
+    border-radius: 4px 4px 0 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+
+  #yoo-calendar {
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #yoo-calendar {
+    .fc-toolbar.fc-header-toolbar {
+      padding: 10px 20px 46px;
+      justify-content: flex-end;
+    }
+
+    .fc-toolbar .fc-left {
+      right: 20px;
+      top: 35px;
+    }
+
+    .fc-toolbar .fc-right {
+      top: 23px;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #yoo-calendar .fc-toolbar .fc-right .fc-button-group .fc-button {
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  #yoo-calendar .fc-day-top .fc-day-number {
+    padding: 12px 15px;
+
+  }
+}
+
+/*========== End Calendar  ==========*/

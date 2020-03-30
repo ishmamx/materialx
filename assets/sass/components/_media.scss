@@ -1,0 +1,62 @@
+.yoo-medias.yoo-style1 {
+  min-height: 30px;
+  position: relative;
+  padding-left: 45px;
+
+  .yoo-media-img {
+    position: absolute;
+    // left: -45px;
+    width: 30px;
+    left: 0;
+  }
+
+  .yoo-media-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .yoo-media-subtitle {
+    color: $base-color3;
+  }
+
+  .yoo-media-tag {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 13px;
+    background-color: rgba($base-color, 0.04);
+    border-radius: 4px;
+    line-height: 1.6em;
+    padding: 2px 8px;
+    color: $indigo-color;
+  }
+
+  .yoo-groth-percentage {
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  .yoo-media-text {
+    margin-top: 1px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+
+  &.yoo-type1 {
+    padding-left: 63px;
+    min-height: 48px;
+
+    .yoo-media-img {
+      position: absolute;
+      // left: -63px;
+      width: 48px;
+    }
+  }
+}

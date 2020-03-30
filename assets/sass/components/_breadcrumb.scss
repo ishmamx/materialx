@@ -1,0 +1,51 @@
+.breadcrumb {
+  padding: 13px 15px;
+  border-radius: 4px;
+  background-color: $base-color5;
+
+  .breadcrumb-item.active {
+    color: $base-color2;
+  }
+
+  a {
+    color: $indigo-color;
+
+    &:hover {
+      color: rgba($indigo-color, 0.8);
+    }
+  }
+}
+
+.yoo-breadcamb.yoo-style1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  letter-spacing: 0;
+  font-family: 'Roboto Mono', monospace;
+
+  li {
+    &:not(:last-child) {
+      padding-right: 13px;
+      margin-right: 11px;
+      position: relative;
+
+      &:before {
+        content: '';
+        height: 7px;
+        width: 7px;
+        border: 2px solid $base-color3;
+        position: absolute;
+        transform: rotate(45deg);
+        right: -1px;
+        top: 7px;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+  }
+
+  li,
+  a {
+    letter-spacing: 0.45px;
+  }
+}

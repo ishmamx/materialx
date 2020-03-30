@@ -1,0 +1,142 @@
+.progress {
+  height: 6px;
+  border-radius: 20px;
+  background-color: $base-color4;
+}
+
+.with-lables.progress {
+  overflow: inherit;
+}
+
+.with-lables.progress .progress-bar {
+  border-radius: initial;
+}
+
+.progress-bar {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.progress .progress-per {
+  position: absolute;
+  right: -17px;
+  top: -45px;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding: 5px 0px;
+  width: 34px;
+  text-align: center;
+}
+
+.progress .progress-per:before {
+  content: '';
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  background: $indigo-color;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 20px 20px 0px 20px;
+  top: -5px;
+  left: -2px;
+}
+
+.progress span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.yoo-progress-wrap.yoo-style3 {
+  .yoo-progress-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+
+  .yoo-progressbar-title {
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .yoo-progressbar-percentage {
+    font-size: 13px;
+    color: $base-color3;
+  }
+
+  .progress {
+    height: 4px;
+  }
+
+  &.yoo-type1 {
+    display: flex;
+    align-items: center;
+
+    .yoo-progress-head {
+      margin: 0;
+      width: 35px;
+      flex: none;
+    }
+
+    .yoo-progressbar-percentage {
+      color: $base-color2;
+    }
+
+    .progress {
+      flex: 1;
+    }
+  }
+}
+
+.yoo-progressbar-wrap.yoo-style1 {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 20px);
+
+  .yoo-progressbar {
+    flex: none;
+    width: 50%;
+    height: 5px;
+    background-color: $base-color4;
+    border-radius: 3px;
+  }
+
+  .yoo-progressbar-number {
+    font-size: 13px;
+    line-height: 1.2em;
+    color: $base-color3;
+    margin-left: 6px;
+  }
+}
+
+.yoo-progressbar-wrap.yoo-style2 {
+  .yoo-progressbar-title {
+    font-size: 12px;
+    color: $base-color3;
+    line-height: 1.6em;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  .yoo-progressbar-number {
+    font-size: 16px;
+    color: $base-color1;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .yoo-progressbar-out {
+    height: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $base-color4;
+
+    .yoo-progressbar {
+      height: 100%;
+    }
+  }
+}
+
+.yoo-progressbar {
+  background-color: rgba(0, 0, 0, 0.3);
+}
