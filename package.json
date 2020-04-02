@@ -1,6 +1,6 @@
 {
   "name": "materialx-yoo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Free template based on Material Design",
   "main": "assets/js/materialX.js",
   "scripts": {
