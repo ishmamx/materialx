@@ -1,0 +1,34 @@
+{
+  "name": "materialx-yoo",
+  "version": "1.0.0",
+  "description": "Free template based on Material Design",
+  "main": "assets/js/materialX.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yookits/materialx.git"
+  },
+  "keywords": [
+    "admin",
+    "dashboard",
+    "framework",
+    "template",
+    "css",
+    "sass",
+    "responsive",
+    "control-panel",
+    "admin-dashboard",
+    "dashboard-template",
+    "bootstrap-admin",
+    "bootstrap-dashboard",
+    "theme"
+  ],
+  "author": "YooKits",
+  "license": "CC by 4.0",
+  "bugs": {
+    "url": "https://github.com/yookits/materialx/issues"
+  },
+  "homepage": "https://github.com/yookits/materialx#readme"
+}

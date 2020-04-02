@@ -2321,40 +2321,81 @@ table {
   }
 }
 
+// Start Add
 .yoo-add {
+  padding: 20px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
-  background: $indigo-color;
   width: 100%;
-  padding: 15px 20px;
-  display: block;
   z-index: 10;
-  transition: all 0.3s ease;
+  background-color: #fff;
 
-  &:hover {
-    opacity: 0.9;
+  .yoo-add-in {
+    padding: 25px 15px;
+    display: block;
+    transition: all 0.3s ease;
+    background-color: #f2f2f6;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    text-align: center;
   }
 
-  h4 {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    margin-bottom: 3px;
+  .yoo-add-thumb {
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    width: 160px;
+    margin: auto;
+    margin-bottom: 16px;
   }
 
-  h2 {
-    font-size: 18px;
-    color: #fff;
+  .yoo-add-title {
+    font-size: 16px;
+    color: #000;
     margin: 0;
     font-weight: 500;
-    letter-spacing: 0;
+    margin-bottom: 16px;
   }
 }
 
-.yoo-add+.yoo-sidebarheader-in {
-  .yoo-sidebar-nav {
-    padding-bottom: 87px;
+@media screen and (min-width: 991px) {
+  .yoo-add+.yoo-sidebarheader-in {
+    height: calc(100% - 260px) !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .yoo-add {
+    display: none;
+  }
+}
+
+// End Add
+.yoo-documentation-body {
+  a {
+    color: $indigo-color;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+
+  pre {
+    background: #fff;
+    border: 1px solid $base-color4;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 500;
   }
 }
 
@@ -2364,6 +2405,12 @@ table {
   height: calc(100vh - 322px);
   min-height: 600px;
   border-radius: 2px;
+}
+
+pre {
+  margin: 0;
+  font-size: 14px;
+  color: $base-color1;
 }
 
 @media screen and (max-width: 991px) {
@@ -2391,6 +2438,7 @@ table {
     padding-left: 20px;
     padding-right: 20px;
   }
+
 }
 
 @media screen and (max-width: 575px) {

@@ -34,7 +34,8 @@
   a {
     color: $indigo-color;
     &:hover {
-      color: rgba($indigo-color, 0.8);
+      color: $indigo-color;
+      text-decoration: underline;
     }
   }
 }
