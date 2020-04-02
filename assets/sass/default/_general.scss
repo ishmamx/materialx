@@ -2358,6 +2358,16 @@ table {
   }
 }
 
+.yoo-sidebar-active {
+  .yoo-add {
+    display: none;
+  }
+
+  .yoo-add+.yoo-sidebarheader-in {
+    height: 100% !important;
+  }
+}
+
 @media screen and (min-width: 991px) {
   .yoo-add+.yoo-sidebarheader-in {
     height: calc(100% - 260px) !important;
@@ -2399,7 +2409,7 @@ table {
   }
 }
 
-.tb-icon-wrap iframe {
+.yoo-icon-wrap iframe {
   border: none;
   width: 100%;
   height: calc(100vh - 322px);

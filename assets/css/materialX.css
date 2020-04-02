@@ -2724,6 +2724,11 @@ table .yoo-box-sm img {
     font-weight: 500;
     margin-bottom: 16px; }
 
+.yoo-sidebar-active .yoo-add {
+  display: none; }
+.yoo-sidebar-active .yoo-add + .yoo-sidebarheader-in {
+  height: 100% !important; }
+
 @media screen and (min-width: 991px) {
   .yoo-add + .yoo-sidebarheader-in {
     height: calc(100% - 260px) !important; } }
@@ -2747,7 +2752,7 @@ table .yoo-box-sm img {
   font-size: 18px;
   font-weight: 500; }
 
-.tb-icon-wrap iframe {
+.yoo-icon-wrap iframe {
   border: none;
   width: 100%;
   height: calc(100vh - 322px);
@@ -7493,8 +7498,8 @@ h6 .badge {
   .yoo-svg-map-wrap .vmap-wrapper.yoo-style1#svg-usa {
     height: 300px; }
 
-.vmap-wrapper.tb-style1,
-.vmap-wrapper.tb-style1#svg-usa {
+.vmap-wrapper.yoo-style1,
+.vmap-wrapper.yoo-style1#svg-usa {
   height: 285px;
   background-color: transparent !important; }
 
