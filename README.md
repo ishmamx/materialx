@@ -9,7 +9,6 @@ Your application’s user interface is everything that the user sees and interac
 
 Looking more epic demos & tons of features? Go Pro!
 ------------------------------
-Looking more epic demos & tons of features? Go Pro!
 Pro version comes with even more demos and features. You can literally build any web app ever. Just take a look from here: https://yookits.com/demo/materialx-pro/
 
 !["MaterialXPro Preview"](https://github.com/yookits/materialx/blob/master/assets/img/materialxpro.png "MaterialXPro Preview")
